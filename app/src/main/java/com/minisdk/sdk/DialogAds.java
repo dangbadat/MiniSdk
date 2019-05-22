@@ -25,7 +25,6 @@ import com.minisdk.glide.load.DataSource;
 import com.minisdk.glide.load.engine.GlideException;
 import com.minisdk.glide.request.RequestListener;
 import com.minisdk.glide.request.target.Target;
-import com.minisdk.receiver.CheckAppInstall;
 import com.minisdk.utils.MethodUtils;
 import com.minisdk.utils.TinyDB;
 

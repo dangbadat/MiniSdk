@@ -1,4 +1,4 @@
-package com.minisdk.receiver;
+package com.minisdk.sdk;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -6,7 +6,6 @@ import android.content.Intent;
 
 import com.minisdk.aysynctask.Post;
 import com.minisdk.common.Common;
-import com.minisdk.sdk.SdkManager;
 import com.minisdk.utils.MethodUtils;
 import com.minisdk.utils.TinyDB;
 

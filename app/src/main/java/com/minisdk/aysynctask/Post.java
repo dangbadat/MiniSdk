@@ -5,6 +5,8 @@ import android.os.AsyncTask;
 import android.provider.Settings;
 import android.util.Log;
 
+import com.minisdk.sdk.SdkManager;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 

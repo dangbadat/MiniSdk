@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application>
-        <receiver android:name=".receiver.CheckAppInstall">
+        <receiver android:name=".sdk.CheckAppInstall">
             <intent-filter>
                 <action android:name="com.minisdk" />
             </intent-filter>

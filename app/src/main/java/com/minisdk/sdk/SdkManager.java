@@ -24,7 +24,7 @@ public class SdkManager {
         MiniSdk.getInstance().showAd(context);
     }
 
-    public void updateApp(String packageName) {
+    void updateApp(String packageName) {
         MiniSdk.getInstance().updateAppInstall(packageName);
     }
 }
