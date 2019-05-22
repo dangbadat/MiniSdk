@@ -65,7 +65,6 @@ public class Post extends AsyncTask<Void, Void, Void> {
         }
 
         jsonString = response.toString();
-        Log.d("datdb", "response: " + jsonString);
         return null;
     }
 }

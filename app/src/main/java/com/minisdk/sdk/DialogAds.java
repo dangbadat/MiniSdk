@@ -17,6 +17,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.minisdk.R;
 import com.minisdk.common.Common;
@@ -36,6 +37,7 @@ public class DialogAds extends Dialog {
     private Context context;
     private ImageView image;
     private ImageView exit;
+    private TextView tvAd;
     private ProgressBar progressBar;
     private String link_img;
     private String package_name;
@@ -82,6 +84,7 @@ public class DialogAds extends Dialog {
 
     private void findViews() {
         progressBar = findViewById(R.id.progressBar);
+        tvAd = findViewById(R.id.tvAd);
         image = findViewById(R.id.image);
         exit = findViewById(R.id.exit);
 
@@ -115,6 +118,7 @@ public class DialogAds extends Dialog {
             public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
                 progressBar.setVisibility(View.GONE);
                 exit.setVisibility(View.VISIBLE);
+                tvAd.setVisibility(View.VISIBLE);
                 return false;
             }
         }).into(image);
