@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 
+import com.minisdk.glide.Glide;
 import com.minisdk.model.Item;
 
 import org.json.JSONArray;
@@ -76,6 +77,7 @@ public class MethodUtils {
 
                 if (!isAppInstall(context, package_name)) {
                     items.add(item);
+                    Glide.with(context).load(link_img).preload();
                 }
             }
         } catch (JSONException e) {
